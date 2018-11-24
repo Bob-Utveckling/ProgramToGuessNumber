@@ -1,0 +1,62 @@
+$ git init
+Initialized empty Git repository in C:/Users/Bob/Desktop/Java Utbildning [30juni                       2018 13.46]/010. Java Kurser [12aug2018 19.50]/04.Javaverktyg och byggmiljöer [2                       5okt2018 21.04]/Labb2/.git/
+2018 13.46]/010. Java Kurser [12aug2018 19.50]/04.Javaverktyg och byggmiljöer [2                       5okt2018 21.04]/Labb2/.git/
+5okt2018 21.04]/Labb2/.git/
+
+$ git config --global user.name "Bob-Utveckling"
+
+$ git config --global user.email "development@bamshad.se"
+
+$ touch .gitignore
+
+$ atom.cmd .gitignore
+
+$ git add .gitignore
+
+$ git commit -m "Commit initiala filer för projekten"
+[master (root-commit) 067dc48] Commit initiala filer för projekten
+ 1 file changed, 12 insertions(+)
+ create mode 100644 .gitignore
+ 
+$ ls
+Guesser.java  TestGuesser.java
+
+$ git add Guesser.java
+warning: LF will be replaced by CRLF in Guesser.java.
+The file will have its original line endings in your working directory.
+
+$ git add .
+warning: LF will be replaced by CRLF in TestGuesser.java.
+The file will have its original line endings in your working directory.
+
+$ git remote add origin https://github.com/Bob-Utveckling/ProgramToGuessNumber
+
+$ git push origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/Bob-Utveckling/ProgramToGuessNumber/' not                        found
+
+$ git remote -v
+origin  https://github.com/Bob-Utveckling/ProgramToGuessNumber (fetch)
+origin  https://github.com/Bob-Utveckling/ProgramToGuessNumber (push)
+
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Bob-Utveckling/ProgramToGuessNumber/pull/new/ma                        ster
+remote:
+To https://github.com/Bob-Utveckling/ProgramToGuessNumber
+ * [new branch]      master -> master
+
+$ git add Guesser.java
+
+$ git add TestGuesser.java
+
+$ git add GuessingGame.java
+
+
