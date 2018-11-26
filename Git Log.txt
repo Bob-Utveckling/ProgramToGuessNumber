@@ -31,6 +31,15 @@ The file will have its original line endings in your working directory.
 
 $ git remote add origin https://github.com/Bob-Utveckling/ProgramToGuessNumber
 
+$ git commit -m "A first upload of files"
+[master (root-commit) de720bf] A first upload of files
+ 5 files changed, 260 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Git Log.txt
+ create mode 100644 Guesser.java
+ create mode 100644 GuessingGame.java
+ create mode 100644 TestGuesser.java
+
 $ git push origin master
 remote: Repository not found.
 fatal: repository 'https://github.com/Bob-Utveckling/ProgramToGuessNumber/' not                        found
