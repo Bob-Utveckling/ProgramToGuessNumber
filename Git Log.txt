@@ -17,55 +17,43 @@ $ git commit -m "Commit initiala filer för projekten"
 [master (root-commit) 067dc48] Commit initiala filer för projekten
  1 file changed, 12 insertions(+)
  create mode 100644 .gitignore
- 
-$ ls
-Guesser.java  TestGuesser.java
 
-$ git add Guesser.java
-warning: LF will be replaced by CRLF in Guesser.java.
-The file will have its original line endings in your working directory.
+ $ ls
+'Git Log.txt'    GuessingGame.class     IntervalParser.java
+ Guesser.class   GuessingGame.java      TestGuesser.class
+ Guesser.java    IntervalParser.class   TestGuesser.java
 
 $ git add .
-warning: LF will be replaced by CRLF in TestGuesser.java.
-The file will have its original line endings in your working directory.
+
 
 $ git remote add origin https://github.com/Bob-Utveckling/ProgramToGuessNumber
-
-$ git commit -m "A first upload of files"
-[master (root-commit) de720bf] A first upload of files
- 5 files changed, 260 insertions(+)
- create mode 100644 .gitignore
- create mode 100644 Git Log.txt
- create mode 100644 Guesser.java
- create mode 100644 GuessingGame.java
- create mode 100644 TestGuesser.java
 
 $ git push origin master
 remote: Repository not found.
 fatal: repository 'https://github.com/Bob-Utveckling/ProgramToGuessNumber/' not                        found
 
+$ echo Create Repository on GitHub.com and return here when done...
+Create Repository on GitHub.com and return here when done...
+
+$ echo done
+done
+
 $ git remote -v
 origin  https://github.com/Bob-Utveckling/ProgramToGuessNumber (fetch)
 origin  https://github.com/Bob-Utveckling/ProgramToGuessNumber (push)
 
+$ git commit -m "updated all files"
+[master 108aa45] updated all files
+ 3 files changed, 111 insertions(+), 2 deletions(-)
+ create mode 100644 IntervalParser.java
+
 $ git push origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
 Delta compression using up to 8 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-remote:
-remote: Create a pull request for 'master' on GitHub by visiting:
-remote:      https://github.com/Bob-Utveckling/ProgramToGuessNumber/pull/new/ma                        ster
-remote:
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.69 KiB | 864.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Bob-Utveckling/ProgramToGuessNumber
- * [new branch]      master -> master
-
-$ git add Guesser.java
-
-$ git add TestGuesser.java
-
-$ git add GuessingGame.java
-
-
+   de720bf..108aa45  master -> master
